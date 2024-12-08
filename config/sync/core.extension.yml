@@ -52,4 +52,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  portfolio_react_theme: 0
 profile: standard

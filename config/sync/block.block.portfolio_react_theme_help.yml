@@ -1,0 +1,22 @@
+uuid: 2c6c1197-f9fe-4a27-a843-bea8fe3e256f
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - portfolio_react_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: portfolio_react_theme_help
+theme: portfolio_react_theme
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

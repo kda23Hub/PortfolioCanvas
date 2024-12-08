@@ -1,0 +1,22 @@
+uuid: ad3ddc74-a3f6-4053-ae77-2644985c4b12
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - portfolio_react_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: portfolio_react_theme_primary_local_tasks
+theme: portfolio_react_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
