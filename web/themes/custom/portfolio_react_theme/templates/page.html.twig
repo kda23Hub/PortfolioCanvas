@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head-placeholder token="{{ head_placeholder }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ css_placeholder }}">
+    <js-placeholder token="{{ js_placeholder }}">
+  </head>
+  <body>
+    <header>
+      <div id="root-header"></div>
+    </header>
+    <main role="main">
+      <div id="root"></div>
+    </main>
+    <footer>
+      <div id="root-footer"></div>
+    </footer>
+    <script src="{{ base_path }}themes/custom/portfolio_theme/react/static/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+name: 'Portfolio Theme'
+type: theme
+description: 'Custom theme for my portfolio with React frontend integration.'
+package: Custom
+base theme: false
+core_version_requirement: ^10 || ^11
+libraries:
+  - portfolio_react_theme/global-styling
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
