@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Portfolio React Theme.
+ */
+
+///**
+// * Implements hook_preprocess_page().
+// */
+//function portfolio_react_theme_preprocess_page(array &$variables) {
+//  $theme_path = \Drupal::service('extension.list.theme')->getPath('portfolio_react_theme');
+//  $manifest_path = DRUPAL_ROOT . '/' . $theme_path . '/react/asset-manifest.json';
+//
+//  if (file_exists($manifest_path)) {
+//    $manifest = json_decode(file_get_contents($manifest_path), TRUE);
+//    $variables['react_assets'] = [
+//      'js' => $manifest['files']['main.js'] ?? null,
+//      'css' => $manifest['files']['main.css'] ?? null,
+//    ];
+//  } else {
+//    $variables['react_assets'] = [];
+//  }
+//}
+
+function portfolio_react_theme_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'portfolio_theme/react_app';
+}
+
+
+

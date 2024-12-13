@@ -38,6 +38,17 @@ web/sites/simpletest
 # Ignore multi-site test environment.
 # simpletest
 
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output (optional, depending on your deployment strategy)
+react/
+react-src/build/
+
+# Ignore other temporary files
+*.log
+*.tmp
+
 # Ignore development and IDE files.
 .docksal/
 .idea/

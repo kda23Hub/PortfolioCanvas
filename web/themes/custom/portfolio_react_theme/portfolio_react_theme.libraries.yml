@@ -1,6 +1,6 @@
-global-styling:
+react_app:
+  js:
+    react/js/main.js: {}
   css:
     theme:
-      css/styles.css: {}
-  js:
-    js/script.js: {}
+      react/css/main.css: {}

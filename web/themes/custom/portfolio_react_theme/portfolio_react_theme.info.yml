@@ -6,6 +6,7 @@ base theme: false
 core_version_requirement: ^10 || ^11
 libraries:
   - portfolio_react_theme/global-styling
+  - portfolio_react_theme/react_app
 regions:
   header: 'Header'
   content: 'Content'
