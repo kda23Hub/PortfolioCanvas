@@ -1,10 +1,23 @@
 import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Location from './components/Location';
+import SocialLinks from './components/SocialLinks';
+import FormSection from './components/FormSection';
 
 function App() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>If you see this message, React is working correctly.</p>
+    <div className="App">
+      <Header />
+      <Skills />
+      <Experience />
+      <Education />
+      <Location />
+      <SocialLinks />
+      <FormSection />
     </div>
   );
 }
