@@ -3,7 +3,7 @@ import React from 'react';
 const PhotoSection = () => {
   return (
     <div className="photo-section">
-      <img src="your-photo.jpg" alt="Your Photo" />
+      <img src={process.env.PUBLIC_URL + '/photo.jpeg'} alt="Your Photo" />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FormSection = () => {
   return (
-    <section className="section">
+    <section className="section contact-section">
       <h2 className="section-title">Contact Form</h2>
       <form className="contact-form">
         <input type="text" placeholder="Name" required />
