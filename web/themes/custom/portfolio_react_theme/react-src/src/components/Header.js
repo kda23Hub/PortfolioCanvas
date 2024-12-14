@@ -1,17 +1,21 @@
 import React from 'react';
-import PhotoSection from './PhotoSection';
 
 const Header = () => {
   return (
     <header className="App-header">
-      <PhotoSection />
-      <h1>Denys Kruhlov</h1>
-      <p>PHP/Drupal developer</p>
-      <p>Proficient backend developer with over 5 years of experience in PHP and Drupal, specializing
-        in building and maintaining dynamic websites and web applications. Successfully participated
-        in the migration of content and data for Drupal websites, worked with related PHP technologies,
-        with experience in Symfony, engaged in direct communication with clients, provided solutions
-        for current challenges, worked as part of client teams.</p>
+      <div className="header-content">
+        <h1>Daniel Shan Balico</h1>
+        <p>Full-Stack Developer</p>
+        <p>Hello! 👋 How are you doing? 🤔</p>
+        <p>I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.</p>
+        <nav className="nav">
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div className="photo-section">
+        <img src="path/to/your/photo.jpg" alt="Daniel Shan Balico" />
+      </div>
     </header>
   );
 };

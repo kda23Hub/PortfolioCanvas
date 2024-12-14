@@ -1,25 +1,24 @@
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
+import Projects from './components/Projects';
 import Education from './components/Education';
-import Location from './components/Location';
-import SocialLinks from './components/SocialLinks';
-import FormSection from './components/FormSection';
+import Experience from './components/Experience';
+import Technologies from './components/Technologies';
+import Contact from './components/Contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <Skills />
-      <Experience />
-      <Education />
-      <Location />
-      <SocialLinks />
-      <FormSection />
+      <Projects />
+      <div className="education-experience-section">
+        <Education />
+        <Experience />
+      </div>
+      <Technologies />
+      <Contact />
     </div>
   );
-}
+};
 
 export default App;

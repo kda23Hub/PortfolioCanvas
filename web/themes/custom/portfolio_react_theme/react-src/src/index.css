@@ -28,27 +28,41 @@ code {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 50px 20px;
+  color: black;
 }
 
-.App-link {
+.header-content {
+  flex: 1;
+  text-align: left;
+}
+
+.photo-section img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.nav a {
+  margin: 0 15px;
+  font-size: 1.2rem;
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav a:hover {
+  color: #21a1f1;
 }
 
 .section {
@@ -60,46 +74,44 @@ code {
   margin-bottom: 20px;
 }
 
-.contact-form {
+.education-experience-section {
   display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 1rem;
+.education, .experience {
+  flex: 1;
+  margin: 0 10px;
 }
 
-.contact-form button {
-  padding: 10px;
-  font-size: 1rem;
-  background-color: #61dafb;
-  color: white;
-  border: none;
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technology-item {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
-  background-color: #21a1f1;
+.technology-item:hover {
+  background-color: #e0e0e0;
 }
 
-.photo-section {
+.contact p {
+  font-size: 1rem;
   margin-bottom: 20px;
-}
-
-.photo-section img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
 }
 
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
@@ -107,22 +119,23 @@ code {
   margin: 0 10px;
   font-size: 1.5rem;
   color: #61dafb;
+  text-decoration: none;
 }
 
 .social-links a:hover {
   color: #21a1f1;
 }
 
-.experience-item {
-  margin-bottom: 20px;
+.email-link {
+  margin-top: 20px;
+  text-align: left;
 }
 
-.experience-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.email-link a {
+  color: #61dafb;
+  text-decoration: none;
 }
 
-.experience-item p {
-  font-size: 1rem;
-  margin-bottom: 5px;
+.email-link a:hover {
+  color: #21a1f1;
 }
