@@ -1,24 +1,35 @@
-import React from 'react';
-import Header from './components/Header';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Technologies from './components/Technologies';
-import Contact from './components/Contact';
+import { lazy, Suspense } from 'react';
 
-const App = () => {
+const Header = lazy(() => import('./components/Header'));
+const Hero = lazy(() => import('./components/Hero'));
+const Project = lazy(() => import('./components/Project'));
+const Skill = lazy(() => import('./components/Skill'));
+const Contact = lazy(() => import('./components/Contact'));
+const Experience = lazy(() => import('./components/Experience'))
+function App() {
   return (
-    <div>
-      <Header />
-      <Projects />
-      <div className="education-experience-section">
-        <Education />
-        <Experience />
+    <Suspense
+      fallback={
+        <div className='sk-folding-cube'>
+          <div className='sk-cube1 sk-cube'></div>
+          <div className='sk-cube2 sk-cube'></div>
+          <div className='sk-cube4 sk-cube'></div>
+          <div className='sk-cube3 sk-cube'></div>
+        </div>
+      }
+    >
+      <div className='App container my-10 mx-auto max-w-screen-lg bg-black'>
+        <Header />
+        <main>
+          <Hero />
+          <Experience />
+          <Project />
+          <Skill />
+          <Contact />
+        </main>
       </div>
-      <Technologies />
-      <Contact />
-    </div>
+    </Suspense>
   );
-};
+}
 
 export default App;

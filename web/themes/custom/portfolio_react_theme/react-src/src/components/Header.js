@@ -1,22 +1,38 @@
 import React from 'react';
+import { RESUME_PATH } from '../root.link';
 
 const Header = () => {
   return (
-    <header className="App-header">
-      <div className="header-content">
-        <h1>Daniel Shan Balico</h1>
-        <p>Full-Stack Developer</p>
-        <p>Hello! 👋 How are you doing? 🤔</p>
-        <p>I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.</p>
-        <nav className="nav">
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <div className="photo-section">
-        <img src="path/to/your/photo.jpg" alt="Daniel Shan Balico" />
-      </div>
-    </header>
+    <nav className='space-x-10'>
+      <ul className='flex flex-row space-x-4 md:space-x-10 md:text-xl justify-center md:justify-end font-thin'>
+        <li>
+          <a href='#Experience' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+            Experience
+          </a>
+        </li>
+        <li>
+          <a href='#Projects' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href='#Skill' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+            Skill
+          </a>
+        </li>
+        <li>
+          <a href='#contact' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+            Contact
+          </a>
+        </li>
+        
+        <li>
+          <a href={RESUME_PATH} target='_blank' rel='noreferrer' className='py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg'>
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
