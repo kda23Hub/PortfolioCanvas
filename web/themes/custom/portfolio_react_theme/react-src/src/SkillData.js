@@ -1,76 +1,76 @@
 const Proficient = [
     {
         skill: "Javascript",
-        logo: './images/icons/javascript-original.svg'
+        logo: process.env.PUBLIC_URL + '/public/images/icons/javascript-original.svg'
     },
     {
         skill: "React Js",
-        logo: './images/icons/react-original.svg'
+        logo: process.env.PUBLIC_URL + '/public/images/icons/react-original.svg'
     },
     {
         skill: "Node JS ",
-        logo: "./images/icons/nodejs-original.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/nodejs-original.svg"
     },
     {
         skill: "MongoDB",
-        logo: "./images/icons/mongodb-original.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/mongodb-original.svg"
     },
     {
         skill: "Git",
-        logo: "./images/icons/git-scm-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/git-scm-icon.svg"
     },
-    
+
     {
         skill: "SocketIO",
-        logo: "./images/icons/socket-io.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/socket-io.svg"
     },
     {
         skill: "C Language",
-        logo: "./images/icons/icons8-c-programming-48.png"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/icons8-c-programming-48.png"
     },
     {
         skill: "C++ Language",
-        logo: "./images/icons/icons8-c++.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/icons8-c++.svg"
     },
     {
         skill: "MySql",
-        logo: "./images/icons/mysql-ar21.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/mysql-ar21.svg"
     },
     {
         skill: "Redis",
-        logo: "./images/icons/redis-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/redis-icon.svg"
     },
     {
         skill: "HTML 5",
-        logo: "./images/icons/html5-original.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/html5-original.svg"
     },
     {
         skill: "CSS 3",
-        logo: "./images/icons/css3-original.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/css3-original.svg"
     },
 ]
 const Familiar = [
     {
         skill: "Java",
-        logo: "./images/icons/java-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/java-icon.svg"
     },
     {
         skill: "Python",
-        logo: "./images/icons/python-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/python-icon.svg"
     },
     {
         skill: "WebRTC",
-        logo: "./images/icons/webrtc.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/webrtc.svg"
     },
     {
         skill: "Linux",
-        logo: "./images/icons/linux-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/linux-icon.svg"
     },
     {
         skill: "AWS",
-        logo: "./images/icons/amazon_aws-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/amazon_aws-icon.svg"
     },
-    
+
 ]
 export { Proficient, Familiar }
 

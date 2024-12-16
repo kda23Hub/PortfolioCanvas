@@ -27,10 +27,10 @@ const Project = () => {
                 </div>
                 <div className='w-auto flex space-x-5 relative '>
                   <a href={project.github} target='_blank' rel='noreferrer'>
-                    <img src='./images/icons/github.svg' alt='link to github page' width='24px' height='24px' />
+                    <img src={process.env.PUBLIC_URL + '/public/images/icons/github.svg'} alt='link to github page' width='24px' height='24px' />
                   </a>
                   <a href={project.link} target='_blank' rel='noreferrer'>
-                    <img src='./images/icons/external-link.svg' alt='link to live website' width='24px' height='24px' />
+                    <img src={process.env.PUBLIC_URL + '/public/images/icons/external-link.svg'} alt='link to live website' width='24px' height='24px' />
                   </a>
                 </div>
               </div>

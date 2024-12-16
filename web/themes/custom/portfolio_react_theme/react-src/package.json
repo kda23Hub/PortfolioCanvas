@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.6.0",
     "autoprefixer": "^9.8.6",
     "cra-template": "1.2.0",
+    "fs-extra": "^11.2.0",
     "lottie-web": "^5.12.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,9 +20,10 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired build && npm run copy-assets",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "copy-assets": "mkdir -p ../react/public && cp -r public/* ../react/public/"
   },
   "eslintConfig": {
     "extends": [

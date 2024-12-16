@@ -23,7 +23,7 @@ const Contact = () => {
             <div className='mr-4'>
               <a href={`https://www.linkedin.com/in/${LINKEDIN_USERNAME}`} target='_blank' rel='noreferrer'>
                 <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
-                  <img src='./images/icons/linkedin.svg' alt='' width='24px' height='24px' className='mr-1' />
+                  <img src={process.env.PUBLIC_URL + '/public/images/icons/linkedin.svg'} alt='' width='24px' height='24px' className='mr-1' />
                   LinkedIn
                 </span>
               </a>
@@ -32,7 +32,7 @@ const Contact = () => {
             <div className='mr-4'>
               <a href={`https://github.com/${GITHUB_USERNAME}`} target='_blank' rel='noreferrer'>
                 <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
-                  <img src='./images/icons/github.svg' alt='' width='24px' height='24px' className='mr-1' />
+                  <img src={process.env.PUBLIC_URL + '/public/images/icons/github.svg'} alt='' width='24px' height='24px' className='mr-1' />
                   GitHub
                 </span>
               </a>
@@ -40,7 +40,7 @@ const Contact = () => {
 
             <a href={`https://twitter.com/${TWITTER_ID}`} target='_blank' rel='noreferrer'>
               <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
-                <img src='./images/icons/icons8-twitter (2).svg' alt='' width='24px' height='24px' className='mr-1' />
+                <img src={process.env.PUBLIC_URL + '/public/images/icons/icons8-twitter (2).svg'} alt='' width='24px' height='24px' className='mr-1' />
                  Twitter
               </span>
             </a>
@@ -65,9 +65,22 @@ const Contact = () => {
       </div>
       <div className='relative md:bottom-56 mr-auto ml-auto md:mr-auto md:ml-0 max-w-xs md:max-w-sm' onClick={() => window.scroll(0, 0)}>
         <picture>
-          <source srcSet='./images/rocket-320.webp 320w, ./images/rocket.webp 768w' type='image/webp' />
-          <source srcSet='./images/rocket.png' sizes='(min-width: 768px) 50vw, 100vw' type='image/png' />
-          <img width='500px' height='500px' loading='lazy' alt='red rocket flying' />
+          <source
+            srcSet={`${process.env.PUBLIC_URL}/public/images/rocket-320.webp 320w, ${process.env.PUBLIC_URL}/public/images/rocket.webp 768w`}
+            type="image/webp"
+          />
+          <source
+            srcSet={`${process.env.PUBLIC_URL}/public/images/rocket.png`}
+            sizes="(min-width: 768px) 50vw, 100vw"
+            type="image/png"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/public/images/rocket.png`}
+            width="500px"
+            height="500px"
+            loading="lazy"
+            alt="red rocket flying"
+          />
         </picture>
       </div>
     </section>
