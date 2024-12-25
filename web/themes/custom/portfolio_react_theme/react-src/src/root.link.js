@@ -1,11 +1,11 @@
-export const RESUME_PATH = 'https://drive.google.com/';
-export const GITHUB_USERNAME = 'codewithvk';
-export const LINKEDIN_USERNAME = 'vivekkumarjaviya';
-export const FIRST_NAME = 'Vivekkumar';
-export const LAST_NAME = 'Javiya';
-export const ADDRESS = 'Rajkot, Gujrat'
-export const EMAIL_ID = 'work.vivekjaviya@gmail.com';
-export const TWITTER_ID = 'Vk_javiya';
-export const FRONT_PAGE_NAME = 'Vivek Kumar';
-export const FRONT_PAGE_DESC = 'A Full-Stack Web Developer & Open Source Contributor.I like to build things for web and solving problems.'
+export const RESUME_PATH = 'https://drive.google.com/file/d/1d0fGvmqM2XhS58WXdKBDRCxa4mMwA7E5/view?usp=sharing';
+export const GITHUB_USERNAME = 'kda23Hub';
+export const LINKEDIN_USERNAME = 'denys-kruhlov-457a79122';
+export const FIRST_NAME = 'Denys';
+export const LAST_NAME = 'K.';
+export const ADDRESS = 'Varna, Bulgaria'
+export const EMAIL_ID = 'denys.kruhlov64@gmail.com';
+export const TWITTER_ID = 'kda23';
+export const FRONT_PAGE_NAME = 'Denys Kruhlov';
+export const FRONT_PAGE_DESC = 'With 5+ of expertise in PHP, Drupal, and Symfony, I specialize in building scalable web applications, creating custom modules and themes, integrating APIs, and leveraging Drupal as a Headless CMS with React.js. I am passionate about delivering clean, maintainable code and working closely with clients to design solutions that effectively address complex technical challenges.'
 

@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: 'React Simple Portfolio',
+    title: 'React Portfolio',
     image: process.env.PUBLIC_URL + '/public/images/portfolio2.png',
     description: "Make Portfolio template for developer!!",
     tools: ['ReactJs', 'Tailwind css'],
@@ -16,7 +16,7 @@ const projects = [
     link: 'https://github.com/codewithvk/React-simple-portfolio',
   },
   {
-    title: 'React Simple Portfolio',
+    title: 'CodeCraftHub',
     image: process.env.PUBLIC_URL + '/public/images/portfolio2.png',
     description: "Make Portfolio template for developer!!",
     tools: ['ReactJs', 'Tailwind css'],
