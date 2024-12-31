@@ -34,7 +34,7 @@ const Proficient = [
     },
     {
         skill: "Pantheon",
-        logo: process.env.PUBLIC_URL + "/public/images/icons/pantheonio-icon.svg"
+        logo: process.env.PUBLIC_URL + "/public/images/icons/pantheon-svgrepo-com.svg"
     },
     {
         skill: "Apache Solr",
