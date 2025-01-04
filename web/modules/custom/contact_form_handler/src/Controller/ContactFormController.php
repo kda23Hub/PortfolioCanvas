@@ -2,7 +2,6 @@
 
 namespace Drupal\contact_form_handler\Controller;
 
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Core\Controller\ControllerBase;
@@ -26,6 +25,7 @@ class ContactFormController extends ControllerBase {
     $message = $request->request->get('message');
 
     $this->messageStorage->saveMessage($name, $email, $message);
+
     return new RedirectResponse('/');
   }
 }
