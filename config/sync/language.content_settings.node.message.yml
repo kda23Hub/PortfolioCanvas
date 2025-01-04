@@ -1,0 +1,11 @@
+uuid: 02e559bd-48a0-4c34-a7d2-766fc7dc4c3d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.message
+id: node.message
+target_entity_type_id: node
+target_bundle: message
+default_langcode: site_default
+language_alterable: false

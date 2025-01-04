@@ -1,0 +1,25 @@
+uuid: 31b9b754-d97a-4e07-ae4e-e1ea2be5998e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.message.field_email
+    - field.field.node.message.field_message
+    - node.type.message
+  module:
+    - user
+id: node.message.teaser
+targetEntityType: node
+bundle: message
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_email: true
+  field_message: true
+  langcode: true
