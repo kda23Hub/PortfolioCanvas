@@ -1,0 +1,8 @@
+name: 'Contact Form Handler'
+type: module
+description: 'Handles contact form submissions and stores messages.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:node
+  - drupal:rest

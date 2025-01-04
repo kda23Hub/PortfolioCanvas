@@ -1,0 +1,9 @@
+services:
+  contact_form_handler.message_storage:
+    class: Drupal\contact_form_handler\Service\MessageStorageService
+    arguments: ['@entity_type.manager']
+  drupal.route_csrf_token_exempt:
+    class: 'Drupal\Core\Routing\RouteProvider'
+    arguments: [ '@router.builder', '@entity_type.manager', '@router.request_context', '@module_handler' ]
+    tags:
+      - { name: 'service_provider' }

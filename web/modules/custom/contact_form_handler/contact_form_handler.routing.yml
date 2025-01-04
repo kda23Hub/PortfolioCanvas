@@ -1,0 +1,9 @@
+contact_form_handler.submit:
+  path: '/api/contact-form/submit'
+  defaults:
+    _controller: '\Drupal\contact_form_handler\Controller\ContactFormController::submitForm'
+    _title: 'Contact Form Submit'
+  requirements:
+    _permission: 'access contact form'
+  options:
+    _csrf_token: FALSE

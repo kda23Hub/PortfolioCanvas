@@ -1,0 +1,4 @@
+access contact form:
+  title: 'Access Contact Form'
+  description: 'Allows access to the contact form route'
+  restrict access: false
